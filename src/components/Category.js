@@ -11,7 +11,7 @@ function Categories() {
 
     const fetchCategoryCount = async (category) => {
         try {
-            const response = await fetch(`http://localhost:8000/${category}`);
+            const response = await fetch(`https://whichbetter-json.vercel.app/${category}`);
             const data = await response.json();
             return data.length;
         } catch (error) {
