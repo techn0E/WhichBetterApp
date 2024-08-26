@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Home */
+.header{
+    font-family: "Montserrat", sans-serif;
+    font-family: "Oswald", sans-serif;
+
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.header .navbar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    background-color: black;
+    font-size: 25px;
+    color: #c90016;
+    animation: fadeIn 1s linear forwards;
+    position: relative;
+    z-index: 1;
+}
+.header .navbar .logo{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.header .navbar .navelement{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header .navbar .navelement ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.header .navbar .navelement ul li{
+    margin: 0 20px;
+    position: relative;
+}
+.header .navbar .navelement ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+.header .navbar .navelement ul li:hover::after{
+    width: 100%;
+}
+.header .navbar .navelement ul li:hover a{
+    color: #000;
+    background-color: #c90016;
+    transition: 0.5s;
+}
+.header .navbar .navelement ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #c90016;
+    transition: 0.5s;
+    padding: 0 20px;
+}
+.header .navbar .navelement ul .dropdown:hover::after{
+    width: 100%;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+.header .navbar .navelement ul .dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 1;
+    margin-right: 50px;
+}
+.header .navbar .navelement ul .dropdown .dropbtn{
+    width: 100%;
+}
+.header .navbar .navelement ul .dropdown .dropdown-content {
+    display: none;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    background-color: #000;
+    top: 100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.header .navbar .navelement ul .dropdown:hover .dropdown-content {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition: 0.5s;
+    background-color: #000;
+}
+.header .navbar .navelement ul .dropdown .dropdown-content .dropdownlink {
+    color: #c90016;
+    background-color: black;
+    text-align: left;
+    width: 100%;
+    transition: 0.5s;
+    border-bottom: 3px solid transparent;
+
+}
+.header .navbar .navelement ul .dropdown .dropdown-content .dropdownlink:hover{
+    background-color: #c90016;
+    color: #000;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* CONTENT */
+
+.header .content{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c90016;
+    z-index: 0;
+}
+
+.header .sidebar{
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.2s linear forwards;
+}
+
+.header .sidebar .startbtn{
+    text-decoration: none;
+    font-size: 3em;
+    color: #c90016;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: center;
+    letter-spacing: 0.3em;
+    position: relative;
+ 
+}
+.header .sidebar .startbtn::after, .header .sidebar .startbtn::before{
+    content: '';
+    width: 3px;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+.header .sidebar .startbtn:hover::after, .header .sidebar .startbtn:hover::before{
+    height: 100%;
+    top: 0%;
+}
+.header .sidebar .startbtn::after{
+    right: 0;
+}
+.header .sidebar .startbtn::before{
+    left: 0;
+}
+
+.header .title{
+    width: 90%;
+    height: 100%;
+    background-color: #c90016;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+}
+.header .title .texts{
+    margin: 5%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: auto;
+    word-break: normal;
+    color: black;
+    animation: fadeIn 1.1s linear forwards;
+}
+.header .title .texts h1{
+    font-size: 9em;
+    width: fit-content;
+}
+.header .title .texts p{
+    font-size: 4.5em;
+    margin-left: 5%;
+}
+
+
+/* CATEGORY */
+.header .sidebar .sidetext{
+    color: #c90016;
+    font-size: 3em;
+    color: #c90016;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+.header .categories{
+    width: 90%;
+    height: 100%;
+    background-color: #c90016;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.header .categories .items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+}
+.header .categories .items .item{
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    position: relative;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 1.2s linear forwards;
+}
+.header .categories .items .item:nth-of-type(2){
+    animation-delay: 0.4s;
+}
+
+.header .categories .items .item:nth-of-type(3){
+    animation-delay: 0.8s;
+}
+
+.header .categories .items .item:nth-of-type(4){
+    animation-delay: 1.2s;
+}
+
+.header .categories .items .item:nth-of-type(5){
+    animation-delay: 1.6s;
+}
+.header .categories .items .item:hover{
+    width: 30%;
+    transition: 0.5s;
+    z-index: 5;
+}
+.header .categories .items .item .title{
+    width: 95%;
+    margin-left: 5%;
+    height: 30%;
+    word-wrap: break-word;
+    word-break: normal;
+    font-size: 2em;
+    color: black;
+}
+.header .categories .items .item .subtexts{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+}
+.header .categories .items .item .subtexts p{
+    font-size: 1.5em;
+    opacity: 0.9;
+}
+.header .categories .items .item .subtexts .canditatecount{
+    opacity: 0.7;
+}
+
+/* LEADERSHIP */
+
+.header .leadership{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .leadership .category{
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    animation: fadeIn 1s linear forwards;
+}
+.header .leadership .category .radiofield{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden;
+}
+.radiofield input{
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+}
+#c1:checked~.radiolabel0{
+    color: #ffffff;
+    background-color: #c90016;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+#c2:checked~.radiolabel1{
+    color: #ffffff;
+    background-color: #c90016;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+#c3:checked~.radiolabel2{
+    color: #ffffff;
+    background-color: #c90016;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+#c4:checked~.radiolabel3{
+    color: #ffffff;
+    background-color: #c90016;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+#c5:checked~.radiolabel4{
+    color: #ffffff;
+    background-color: #c90016;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.radiofield label{
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    font-size: 1.4em;
+    line-height: 1;
+    color: #c90016;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, font-size 0.5s ease-in-out;
+}
+.header .leadership .results{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #c90016;
+    margin-top: 10px;
+}
+.header .leadership .results .items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: transparent;
+    padding-top: 50px;
+}
+.header .leadership .results .items .item{
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+    background-color: #ffffff;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    animation: fadeIn 1.5s linear forwards;
+}
+.header .leadership .results .items .item:hover{
+    cursor: default;
+    transition: 0.5s;
+    z-index: 20;
+}
+.header .leadership .results .items .item .rank{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+.header .leadership .results .items .item .rank h1{
+    font-size: 3em;
+    text-align: left;
+    color: #000;
+}
+.header .leadership .results .items .item .bgimage{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.header .leadership .results .items .item .bgimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .leadership .results .items .item .block{
+    width: 17%;
+    height: 105%;
+    background-color: #c90016;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 5;
+}
+.header .leadership .results .items .item .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #000;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+.header .leadership .results .items .item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.header .leadership .results .items .item .texts{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-radius:0 0 20px 20px;
+    z-index: 100;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+    transform: translateY(200%);
+    z-index: 0;
+    border: 1px solid transparent;
+    border-top: none;
+    opacity: 0.3;
+}
+.header .leadership .results .items .item:hover .texts{
+    transform: translateY(240%);
+    transition: 0.5s;
+    opacity: 1;
+}
+.header .leadership .results .items .item:hover .image{
+    transform: translateY(-10%);
+    transition: 0.5s;
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+
+}
+.header .leadership .results .items .item .texts p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Ranking */
+.header .ranking{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .ranking .canditates{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .ranking .canditates .canditate{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transition: 0.5s;
+    animation: fadeIn 1.2s linear forwards;
+}
+.header .ranking .canditates .canditate:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.header .ranking .canditates .canditate .canditateitem{
+    width: 450px;
+    height: 525px;
+    background-color: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    transition: 0.5s;
+    z-index: 10;
+    transform: translateY(10%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 19px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 24px 50px, rgba(0, 0, 0, 0.3) 0px 20px 50px;
+}
+.header .ranking .canditates .canditate .canditateitem:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translateY(10%);
+    scale: 1.05;
+}
+.header .ranking .canditates .canditate .canditateitem .image{
+    width: 90%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .ranking .canditates .canditate .canditateitem .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header .ranking .canditates .canditate .canditateitem .subtext{
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.header .ranking .canditates .canditate .canditateitem .subtext h1{
+    font-size: 2em;
+}
+.header .ranking .canditates .canditate .canditateitem .subtext p{
+    font-size: 1.2em;
+}
+.header .ranking .canditates .canditate .canditateitem .subtext p span{
+    opacity: 0;
+    transition: 0.5s;
+    position: absolute;
+    right: 5%;
+}
+.header .ranking .canditates .canditate .canditateitem:hover .subtext p span{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.refreshbtn{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation: fadeIn 1s linear forwards;
+}
+.refreshbtn button{
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.refreshbtn button:hover{
+    background-color: #ffffff;
+    transform: rotateZ(360deg);
+    transition: 0.5s;
+}
+.refreshbtn img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.refreshbtn button:active{
+    transform: rotateZ(-180deg);
+}
+
+
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/* UPLOAD */
+
+.header .content .ranking .canditates .form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .content .ranking .canditates .form form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+}
+.header .content .ranking .canditates .form form input, .header .content .ranking .canditates .form form select{
+    width: 320px;
+    height: 60px;
+    margin: 30px;
+    padding: 0 20px;
+    font-size: 1.4em;
+    border-radius: 50px;
+    font-family: Oswald;
+    color: #c90016;
+    background-color: #ffffff;
+}
+.header .content .ranking .canditates .form form button{
+    width: 180px;
+    height: 60px;
+    font-size: 1.7em;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: Oswald;
+    margin: 15px 30px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+.header .content .ranking .canditates .form form button:hover{
+    background-color: #000;
+    transition: 0.5s;
+    color: #c90016;
+}
+.header .content .ranking .canditates .form form label{
+    font-size: 1.5em;
+    margin-left: 40px;
+    color: #ffffff;
+}
+
+.header .loading-upload{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+.header .loading-upload h1{
+    color: #0000003f;
+    font-size: 8em;
+    -webkit-text-stroke: 3px #000;
+    font-style: italic;
+    display: flex;
+    position: relative;
+    text-shadow: #ffffff 10px 10px 5px;
+}
+.header .loading-upload h1::after{
+    content: '...';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent;
+    animation: textpointload 1.5s steps(4) infinite forwards;
+}
+@keyframes textpointload {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 24%;
+    }
+}

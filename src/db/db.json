@@ -1,0 +1,198 @@
+{
+  "actor": [
+    {
+      "id": "1",
+      "name": "Henry Cavill",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/52/03/d7/5203d78c16f16435b00f3eb050bf908f.jpg"
+    },
+    {
+      "id": "4a57",
+      "name": "Keanu Reeves",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/b5/49/98/b54998c07af18632468dfaef2a647829.jpg"
+    },
+    {
+      "id": "b3ac",
+      "name": "Charlie Cox",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/fb/37/b7/fb37b7ca013f6ebcc845ec69faadbf1d.jpg"
+    }
+  ],
+  "actress": [
+    {
+      "id": "1",
+      "name": "Scarlet Johansson",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/34/ee/d8/34eed854f2847ffd81bb027ba89493f2.jpg"
+    },
+    {
+      "id": "dffb",
+      "name": "Emma Stone",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/b6/1d/fa/b61dfa9c26a385f7edc9e4d35460ab9a.jpg"
+    },
+    {
+      "id": "2115",
+      "name": "Esra Bilgiç",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/7a/ff/87/7aff87ee05ed8e1e7ea1f7b5558dfb99.jpg"
+    }
+  ],
+  "singer": [
+    {
+      "id": "1",
+      "name": "Taylor Swift",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/c1/37/7d/c1377d5db1e340c29031c3347fa75799.jpg"
+    },
+    {
+      "id": "8233",
+      "name": "Linkin Park",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/79/12/7f/79127f16cb44e9fb4dce85344aaeb0f3.jpg"
+    },
+    {
+      "id": "c42c",
+      "name": "Wardruna",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/31/a6/d6/31a6d67a06fef61454e50407fe798778.jpg"
+    },
+    {
+      "id": "1144",
+      "name": "Barış Akarsu",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/d5/2a/95/d52a95c267d0f688737935586140d516.jpg"
+    },
+    {
+      "id": "39e1",
+      "name": "Duman",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/6d/6a/a8/6d6aa83212bfa382988d8485f51531c0.jpg"
+    },
+    {
+      "id": "a7be",
+      "name": "Barış Manço",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/d8/fe/67/d8fe670aedcc619e496024f863f67cf5.jpg"
+    },
+    {
+      "id": "f818",
+      "name": "Cem Karaca",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/7f/89/5c/7f895c16f38a8a93ef0334f9dcd6d691.jpg"
+    },
+    {
+      "id": "7509",
+      "name": "Adele",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/7e/f2/bd/7ef2bd8a79ed7d41b3ea72515d6b5237.jpg"
+    },
+    {
+      "id": "8b02",
+      "name": "Arctic Monkeys",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/09/5c/51/095c515d19d6650d746ec24d3101a3b7.jpg"
+    },
+    {
+      "id": "b40e",
+      "name": "The Rolling Stones",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/3c/f5/29/3cf52945ceed2d1d0e49a60d7502bb89.jpg"
+    },
+    {
+      "id": "bc68",
+      "name": "AC/DC",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/88/a8/fb/88a8fb6a6450864522a8ef3941d5da0c.jpg"
+    },
+    {
+      "id": "98c5",
+      "name": "Queen",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/8e/f5/2d/8ef52dce368ca4b2aba752b61896d033.jpg"
+    },
+    {
+      "id": "248f",
+      "name": "Guns N' Roses",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/a4/1c/a2/a41ca2884de9b008b081ed1ee4ba4e06.jpg"
+    },
+    {
+      "id": "393a",
+      "name": "Hans Zimmer",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/95/2b/b0/952bb0d54b556e59b4c8a07c881b9225.jpg"
+    },
+    {
+      "id": "1c27",
+      "name": "Coldplay",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/07/3f/a1/073fa1a203c38327955ae91b29514f4e.jpg"
+    },
+    {
+      "id": "c24a",
+      "name": "OneRepublic",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/d0/f6/5a/d0f65a3d46d1b2112c55c418ce448fd3.jpg"
+    },
+    {
+      "id": "2d9f",
+      "name": "Metallica",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/c6/08/67/c6086787e70e86b52e2e6a479a5c1116.jpg"
+    },
+    {
+      "id": "4a49",
+      "name": "Neighborhood",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/37/4c/d4/374cd437a420f13755c63c2cc767c8ca.jpg"
+    },
+    {
+      "id": "576f",
+      "name": "Imagine Dragons",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/59/62/35/596235926254ddea5b02f1d3aee4eb7e.jpg"
+    },
+    {
+      "id": "687d",
+      "name": "Lana Del Rey",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/84/cf/5a/84cf5aaa32292c65cad502db1a4162e8.jpg"
+    },
+    {
+      "id": "0d7a",
+      "name": "John Williams",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/28/73/af/2873afaefd1badc32636010023b79757.jpg"
+    }
+  ],
+  "tvshow": [
+    {
+      "id": "1",
+      "name": "Ben 10",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/90/00/34/900034679192cb871478712f78b7ed44.jpg"
+    },
+    {
+      "id": "03d4",
+      "name": "Daredevil",
+      "rank": 500,
+      "image": "https://i.pinimg.com/736x/33/24/52/332452495a20e5e68c319a24e29f854c.jpg"
+    }
+  ],
+  "movie": [
+    {
+      "id": "1",
+      "name": "Avengers",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/3c/b4/28/3cb428f7b5e7246ee9c2727862e423e4.jpg"
+    },
+    {
+      "id": "849b",
+      "name": "Gladiator",
+      "rank": 500,
+      "image": "https://i.pinimg.com/564x/49/22/6c/49226cc2be5cb537218993fa89d075a8.jpg"
+    }
+  ]
+}
