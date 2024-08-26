@@ -45,7 +45,7 @@ function Upload() {
                 image: imageUrl
             };
 
-            return fetch(`http://localhost:8000/${category}`, {
+            return fetch(`https://whichbetter-json.vercel.app/${category}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
