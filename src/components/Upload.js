@@ -25,7 +25,7 @@ function Upload() {
         setLoading(true);
         setError('');
 
-        fetch(`http://localhost:8000/${category}`)
+        fetch(`https://whichbetter-json.vercel.app/${category}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Failed to fetch existing entries');
