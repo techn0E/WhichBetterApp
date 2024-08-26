@@ -25,7 +25,7 @@ function Rank() {
 
     const fetchCanditates = async() => {
         try {
-            const response = await fetch(`http://localhost:8000/${category}`);
+            const response = await fetch(`https://whichbetter-json.vercel.app/${category}`);
             const data = await response.json();
             const randomCandidates = data.sort(() => 0.5 - Math.random()).slice(0, 2);
             setCandidates(randomCandidates);
@@ -70,14 +70,14 @@ function Rank() {
         const newLoserRank = Math.round(handleRank(loser.rank, winner.rank, false));
 
         try {
-            await fetch(`http://localhost:8000/${category}/${winnerId}`, {
+            await fetch(`https://whichbetter-json.vercel.app/${category}/${winnerId}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ rank: newWinnerRank }),
             });
-            await fetch(`http://localhost:8000/${category}/${loserId}`, {
+            await fetch(`https://whichbetter-json.vercel.app/${category}/${loserId}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",
